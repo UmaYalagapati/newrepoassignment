@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles2.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="hobby.html">Hobby</a></li>
+      <li><a href="hometown.html">Hometown</a></li>
+    </ul>
+  </nav>
+  <h1>Welcome to My Personal Website</h1>
+  <p>This is the home page of my personal website.</p>
+
+  <!-- Buttons to change content -->
+  <div>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="resetContent()">Reset</button>
+  </div>
+
+  <div id="content">
+    <p id="text">This is the original text.</p>
+    <img id="image" src="images/home.jpg" alt="Home Image" style="width:200px;height:auto;">
+  </div>
+
+  <!-- Field with validation -->
+  <div>
+    <p>Enter the secret code: <input type="text" id="secretCode">
+    <button onclick="checkCode()">Submit</button></p>
+    <p id="error" style="color:red;display:none;">Incorrect code, please try again.</p>
+  </div>
+
+  <!-- Accordion Section -->
+  <button class="accordion">Section 1</button>
+  <div class="panel">
+    <p>This is section 1 content. You can add more information here about the first topic.</p>
+  </div>
+
+  <button class="accordion">Section 2</button>
+  <div class="panel">
+    <p>This is section 2 content. You can add more information here about the second topic.</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>This is section 3 content. You can add more information here about the third topic.</p>
+  </div>
+
+  <p>Check out the other pages:</p>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hobby.html">Hobby</a></li>
+    <li><a href="hometown.html">Hometown</a></li>
+  </ul>
+  <p>Visit my favorite website: <a href="https://memorystudio.ca" class="highlight">Memory Studio</a></p>
+</body>
+</html>
